@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* Common Style */
+/* switch color theme */
+:root {
+--primary: grey;
+--primary-alt: #5e5e5e;
+--grey: #64748b;
+--dark: #1e293b;
+--dark-alt: #334155;
+--light: #f1f5f9;
+--sidebar-width: 300px;
+--bg-color: #171923;
+--bg-light: #232535;
+--font-color: #c5cddb;
+--font-light: #ffffff;
+--bg: #334155;
+  --color: #ddd8ca;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Fira sans', sans-serif;
+}
+
+html.dark-mode {
+--bg: #232b32;
+--color: #ddd8ca;
+}
+body {
+background-color: var(--bg);
+  color: var(--color);
+}
+
+button {
+cursor: pointer;
+appearance: none;
+border: none;
+outline: none;
+background: none;
+}
+
+.app {
+display: flex;
+
+main {
+      flex: 1 1 0;
+      padding: 2rem;
+
+      @media (max-width: 1024px) {
+            padding-left: 6rem;
+      }
+}
+}
+
+
+/*top navigation bar  css*/
+
+.navlinks{
+display:flex
+}
+.navlinks a{
+padding-left: 20px;
+color:#fff;
+text-decoration: none;
+}
+.navlinks a:hover{
+
+color:#0d66e4
+}
+
+.navlinks a:focus{//used to display active state of a tab in nav bar when clicked
+font-weight: bolder;
+color:#f695f1;
+font-size:16px;
+}
+
+
+nav{
+background-color:#30343b;
+color:azure;
+width:100%;
+}
+.navbar-brand,.nav-link,.navbar-toggler-icon {
+
+color: azure;
+padding-left: 20px;
+}
+navbar-brand:focus{
+color:#f695f1;
+}
+#moveright{
+padding-left:30%; 
+float:right;
+}
+
+#weekNumber{
+list-style: none;
+padding-left: 2%;
+}
+   
